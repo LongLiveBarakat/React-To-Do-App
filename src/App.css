@@ -1,0 +1,107 @@
+.container {
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .title {
+    color: #393E46;
+    margin: 0 3rem 2rem 3rem;
+}
+
+.container .add-task {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.container .add-task input {
+    width: 78%;
+    border: none;
+    outline: none;
+    background-color: #F7F7F7;
+    color: #393E46;
+    border: 1px solid #393E46;
+    padding: 0.5rem;
+}
+
+.container .add-task button {
+    padding: 0.5rem;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: #393E46;
+    color: #F7F7F7;
+}
+
+.container .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.container .tasks .task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #393E46;
+    padding: 0.8rem 0.5rem;
+    border-radius: 5px;
+}
+
+.container .tasks .task p {
+    color: #F7F7F7;
+}
+
+.container .tasks .task .edit-input {
+    background-color: #393E46;
+    border: none;
+    outline: none;
+    color: #F7F7F7;
+}
+
+.container .tasks .task .buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container .tasks .task .buttons .edit,
+.container .tasks .task .buttons .delete {
+    color: #F7F7F7;
+    cursor: pointer;
+}
+
+@media (max-width: 806px) {
+    .container .add-task input {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .container .add-task button {
+        width: 100%;
+    }
+
+    .container .title {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 647px) {
+    .container .title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 487px) {
+    .container .title {
+        font-size: 20px;
+    }
+}
